@@ -5,9 +5,9 @@ function analyze(obj){
       let result = {}, string = names[i].textContent.trim().toLowerCase();
       let parts = string.split(/\s/g);
       for (let q = 0; q < parts.length; q++){
-        for (var keyword in config.keywords){
+        for (var keyword in obj){
           if (RegExp(keyword+'*').test(parts[q])){
-            if (config.keywords[keyword].exceptions.forEach(function(exc){if(RegExp(exc+"*").test(string)){continue;}})){}
+            if (obj[keyword].exceptions.forEach(function(exc){if(RegExp(exc+"*").test(string)){continue;}})){}
             else{ result[keyword] = true; }
           }
         }
