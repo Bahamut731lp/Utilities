@@ -1,8 +1,8 @@
 # Utilities
 ## General
 This repository is a collection of code snippets that I use often and for each script I've prepared a vanilla JS and jQuery variant.
-##String Manipulation
-###Beautify
+## String Manipulation
+### Beautify
 This method removes any unnecessary white space from your string and makes it lower case.
 - Vanilla JS
 ```
