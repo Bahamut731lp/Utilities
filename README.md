@@ -7,10 +7,22 @@ This method removes any unnecessary white space from your string and makes it lo
 - Vanilla JS
 ```
 let test = "              TeStS       "
-console.log(test.beautify())
+test.beautify();
 //Output: tests
 ```
 - jQuery
 ```
 $("p").beautify();
+```
+### massReplace
+This method replaces substring occurences based on input object and (RegExp) flags.  
+- Vanilla JS
+```
+let test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+test.massReplace({"Lorem":"Merol", "Dolor": "Rolod"}, "gi");
+//Output: "Merol ipsum Rolod sit amet, consectetur adipiscing elit."
+```
+- jQuery
+```
+$("p").massReplace({"Test":"Test1"})
 ```
