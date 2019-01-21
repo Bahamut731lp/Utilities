@@ -12,7 +12,9 @@ test.beautify();
 ```
 - jQuery
 ```
-$("p").beautify();
+//<p>       HeLlO tHeRE         </p>
+console.log($("p").beautify());
+//Output: "hello there"
 ```
 ### massReplace
 This method replaces substring occurences based on input object and (RegExp) flags.  
@@ -24,5 +26,7 @@ test.massReplace({"Lorem":"Merol", "Dolor": "Rolod"}, "gi");
 ```
 - jQuery
 ```
-$("p").massReplace({"Test":"Test1"})
+//<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+$("p").massReplace({"Lorem":"Merol", "Dolor": "Rolod"}, "gi")
+//Output: "Merol ipsum Rolod sit amet, consectetur adipiscing elit."
 ```
